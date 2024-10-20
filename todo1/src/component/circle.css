@@ -1,0 +1,143 @@
+body {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: #eff7f1;
+}
+
+.circle {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    border-top: 20px;
+    border-width: 20px;
+  }
+  .scale{   
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    position: absolute;
+    transition: 0.3s all;
+    text-align: center;
+    text-align-last: center;
+  }
+  div#one {
+  
+    border-width: 10px;
+    background-color:  rgb(138, 169, 238);
+    border-radius: 500px 0 0 0;
+    left: 0;
+    top: 0;
+    text-align: center;
+    text-align-last: center;
+    text-size-adjust: 40px;
+     
+  }
+  div#two{
+    
+    background-color: rgb(138, 169, 238);
+    border-radius: 0 500px 0 0;
+    right: 0;
+    text-align: center;
+    text-align-last: center;
+  }
+  div#three{
+    
+    background-color: rgb(138, 169, 238);
+    border-radius: 0 0 500px 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    text-align-last: center;
+  }
+  div#four{
+    
+    background-color: rgb(138, 169, 238);
+    border-radius: 0 0 0 500px;
+    bottom: 0;
+    text-align: center;
+    text-align-last: center;
+  }
+  .scale:hover{
+    transform: scale(1.1);
+    z-index: 100;
+      filter: blur(0) !important;
+    -webkit-filter: blur(0) !important;
+  }
+  .circle:hover .scale{
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+  }
+
+.circle2  {
+    position: absolute;
+    height: 340px; /* Inner circle diameter */
+    width: 340px; /* Inner circle diameter */
+    background-color: aquamarine;
+    border-radius: 50%;  /* Makes it a circle */
+    position: absolute; 
+}
+.scale2 {   
+    height: 170px;
+    width: 170px;
+    background-size: cover;
+    position: absolute;
+    transition: 0.3s all;
+  }
+  div#five {
+    border-width: 10px;
+    color: aquamarine;
+    background: -moz-radial-gradient(
+        white 0deg 180deg
+        );
+     
+  }
+  div#six {
+    border-width: 10px;
+    color: aquamarine;
+    background: -moz-radial-gradient(
+      white 180deg 360deg
+     );
+     
+  }
+  .scale2:hover{
+    transform: scale(1.1);
+    z-index: 80;
+      filter: blur(0) !important;
+    -webkit-filter: blur(0) !important;
+  }
+  .circle2:hover .scale2{
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+  } 
+
+.circle3 {
+    width: 150px; /* Inner circle diameter */
+    height: 150px; /* Inner circle diameter */
+    background-color: rgb(238, 241, 247);
+    border-radius: 50%; /* Makes it a circle */
+    position: absolute;
+}
+
+ .circle:hover {
+     background-color: rgb(173, 212, 221); /* Hover color */   
+
+ }
+ .circle2:hover {
+    background-color: cornsilk; /* Hover color */   
+
+}
+.popup {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
